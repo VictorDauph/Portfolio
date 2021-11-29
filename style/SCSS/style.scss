@@ -1,0 +1,160 @@
+/* 
+Application mise en forme avec bootstrap.
+Il s'agit d'un template fait maison et commun à plusieurs projets. Il est possible que certaines variables ne soient pas utiliséés.
+Lancers Sass : 
+sass --watch ./style/SCSS/style.scss:./style/CSS/style.css 
+*/
+
+@import "variables_overrides";
+@import "circular_display";
+@import "animations";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//polices personnalisées
+@font-face
+{
+    font-family: "titles";
+    src: url("../../ressources/fonts/Snickles.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: "texts";
+    src: url("../../ressources/fonts/CalibriRegular.ttf") format("truetype");
+}
+
+*
+{
+    font-family: texts;
+    &:focus{
+        border: 3px solid $primary
+    }
+
+}
+
+h1,h2,h3,h4,h5, nav a
+{
+    font-family: titles;
+    color: $primary;
+}
+
+header h1
+{
+    font-size: 4em;
+}
+
+h2
+{
+    font-size: 2.5em;
+}
+
+header{
+    a,p
+    {
+        font-size: 1.6em;
+        vertical-align: middle;
+    }
+}
+
+  //taille du text de la barre de navigation pour petits ecrans
+  @media (max-width:768px) {
+    header a,p{
+      font-size: 1.4em;
+    }
+}
+  @media (max-width:576px) {
+    header a,p{
+      font-size: 1.2em;
+    }
+}
+
+#img-title
+{
+    min-height: 400px;
+}
+
+.transition
+{
+    min-height: 50px;
+}
+
+
+//style du header
+.paralax
+{
+    position: relative;
+    background-image: url("../../ressources/images/bandeau.png");
+    background-position: center;
+    background-position-y: 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#title-position
+{
+    position: relative;
+    font-weight: bold;
+    
+    p{
+        font-size: 1.2em;
+    }
+}
+
+.sticky {
+    z-index: 9999;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+//images portfolio
+.img-Portfolio{
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    object-fit: none;
+    font-size: 1.5em;
+}
+
+@media (max-width:576px) {
+    .img-Portfolio{
+      font-size: 1em;
+      height: 300px;
+    }
+}
+
+#telescopeHarmonique{
+    background-image: url(../../ressources/images/telescopeHarmonique.png);
+}
+
+#arche{
+    background-image: url(../../ressources/images/archeDuTemps.png);
+}
+
+#reptiluminatis{
+    background-image: url(../../ressources/images/reptiluminatis.png);
+}
+
+#cocyclette{
+background-image: url(../../ressources/images/cocyclette.png);
+}
+
+
+//style cartes portfolio
+#portfolio-page{
+    .card-text{
+        font-size: 1.1em;
+        color: white;
+    }
+}
+
+@media (max-width:768px) {
+    #portfolio-page{
+        .card-text{
+            font-size: 0.8em;
+        }
+    }
+}

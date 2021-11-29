@@ -1,0 +1,68 @@
+//effet hover
+$dureeHover:300ms;
+a
+{
+    scale: (1);
+    transition: transform $dureeHover;
+}
+a:hover, a:focus       
+{
+    transform: scale(1.1);
+    
+}
+
+
+
+
+
+//animation navbar passe au centre
+@keyframes apparition-navbar
+{
+  0%
+  {
+    transform: translateX(50%);
+    opacity: 0;
+  } 
+  45%
+  {
+    transform: translateX(-5%);
+  }
+  100%
+  {
+    transform: translateX(0);
+  }
+}
+
+$dureeNavbar:800ms;
+
+.anim-navbar
+{
+    transform: translateX(-200%);
+    animation: apparition-navbar $dureeNavbar 0s;
+    animation-fill-mode: forwards;
+}
+
+//animation navbar revient en position initial
+@keyframes apparition-navbar-reverse
+{
+  0%
+  {
+    transform: translateX(-50%);
+    opacity: 0;
+  } 
+  65%
+  {
+    transform: translateX(5%);
+  }
+  100%
+  {
+    transform: translateX(0);
+  }
+}
+
+.anim-navbar-reverse
+{
+    transform: translateX(-200%);
+    animation: apparition-navbar-reverse $dureeNavbar 0s;
+    animation-fill-mode: forwards;
+}
