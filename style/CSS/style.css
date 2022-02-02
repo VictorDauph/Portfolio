@@ -11293,6 +11293,10 @@ header a, header p {
   min-height: 50px;
 }
 
+p i {
+  font-size: 1.8em;
+}
+
 .paralax {
   position: relative;
   background-image: url("../../ressources/images/bandeau.png");
