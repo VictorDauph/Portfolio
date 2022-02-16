@@ -11301,7 +11301,7 @@ p i {
   position: relative;
   background-image: url("../../ressources/images/bandeau.png");
   background-position: center;
-  background-position-y: 350px;
+  background-position-y: 400px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
