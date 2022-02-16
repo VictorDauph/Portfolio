@@ -11270,6 +11270,9 @@ h2, .h2 {
   font-size: 2.5em;
 }
 
+header {
+  height: 100vh;
+}
 header a, header p {
   font-size: 1.6em;
   vertical-align: middle;
@@ -11301,7 +11304,7 @@ p i {
   position: relative;
   background-image: url("../../ressources/images/bandeau.png");
   background-position: center;
-  background-position-y: 400px;
+  background-position-y: 450px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

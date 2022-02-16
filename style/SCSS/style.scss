@@ -49,6 +49,8 @@ h2
 }
 
 header{
+    //hauteur du header: 100%de l'écran
+    height: 100vh;
     a,p
     {
         font-size: 1.6em;
@@ -89,7 +91,7 @@ p i{
     position: relative;
     background-image: url("../../ressources/images/bandeau.png");
     background-position: center;
-    background-position-y: 400px;
+    background-position-y: 450px;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
