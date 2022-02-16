@@ -11270,15 +11270,16 @@ h2, .h2 {
   font-size: 2.5em;
 }
 
-header {
-  height: 100vh;
-}
 header a, header p {
   font-size: 1.6em;
   vertical-align: middle;
 }
 
 @media (max-width: 768px) {
+  header {
+    height: 100vh;
+  }
+
   header a, p {
     font-size: 1.4em;
   }
@@ -11304,9 +11305,15 @@ p i {
   position: relative;
   background-image: url("../../ressources/images/bandeau.png");
   background-position: center;
-  background-position-y: 450px;
+  background-position-y: 400px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+@media (max-width: 768px) {
+  .paralax {
+    background-position-y: 70vh;
+    background-size: contain;
+  }
 }
 
 #title-position {

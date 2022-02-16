@@ -49,8 +49,7 @@ h2
 }
 
 header{
-    //hauteur du header: 100%de l'écran
-    height: 100vh;
+
     a,p
     {
         font-size: 1.6em;
@@ -60,6 +59,10 @@ header{
 
   //taille du text de la barre de navigation pour petits ecrans
   @media (max-width:768px) {
+    header{
+        //hauteur du header: 100%de l'écran
+        height: 100vh;
+    }
     header a,p{
       font-size: 1.4em;
     }
@@ -91,9 +94,14 @@ p i{
     position: relative;
     background-image: url("../../ressources/images/bandeau.png");
     background-position: center;
-    background-position-y: 450px;
+    background-position-y: 400px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @media (max-width:768px) {
+        background-position-y:70vh ;
+        background-size: contain;
+    }
 
 }
 
