@@ -11276,10 +11276,6 @@ header a, header p {
 }
 
 @media (max-width: 768px) {
-  header {
-    height: 100vh;
-  }
-
   header a, p {
     font-size: 1.4em;
   }
@@ -11305,15 +11301,9 @@ p i {
   position: relative;
   background-image: url("../../ressources/images/bandeau.png");
   background-position: center;
-  background-position-y: 400px;
+  background-position-y: 350px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-@media (max-width: 768px) {
-  .paralax {
-    background-position-y: 70vh;
-    background-size: contain;
-  }
 }
 
 #title-position {
